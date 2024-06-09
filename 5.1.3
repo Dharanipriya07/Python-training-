@@ -1,0 +1,18 @@
+l=[]
+s=int(input("Enter no.of elements: "))
+j=0
+for i in range(0,s):
+    j=j+1
+    print("Enter element",j)
+    n=int(input())
+    l.append(n)
+a=l[0]
+b=l[0]
+for i in range(0,s):
+    if l[i]>a:
+        a=l[i]
+for i in range(0,s):
+    if l[i]<0:
+        b=l[i]
+print("Largest element: ",a)
+print("Smallest element: ",b)
