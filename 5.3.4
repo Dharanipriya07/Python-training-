@@ -1,0 +1,23 @@
+l=[]
+p=[]
+print("Enter size of first and second arrays : ")
+m=int(input())
+n=int(input())
+for i in range(0,m):
+    a=int(input())
+    l.append(a)
+for i in range(0,n):
+    b=int(input())
+    p.append(b)
+max=l[0]  
+min=p[0]
+for i in range(0,m):
+    if l[i]>max:
+        max=l[i]
+for i in range(0,n):
+    if p[i]<min:
+        min=p[i]
+pro=max*min        
+print("Maximum number of the first element = ",max)     
+print("Minimum number of the second element = ",min)
+print("The product of these two is = ",pro)
