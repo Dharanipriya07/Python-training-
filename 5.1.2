@@ -1,0 +1,36 @@
+l=[]
+s=int(input("Enter size: \n"))
+print("Enter elements: ")
+for i in range(0,s):
+    n=int(input())
+    l.append(n)
+k=int(input("Enter search key: "))
+count=0
+j=0
+for i in range(0,s):
+    j=j+1
+    if l[i]==k:
+        count=count+1
+        break
+if count==1:
+    print(k ,"is found at position ",j)
+else:
+    print(k,"is not found")
+    l=[]
+s=int(input("Enter size: \n"))
+print("Enter elements: ")
+for i in range(0,s):
+    n=int(input())
+    l.append(n)
+k=int(input("Enter search key: "))
+count=0
+j=0
+for i in range(0,s):
+    j=j+1
+    if l[i]==k:
+        count=count+1
+        break
+if count==1:
+    print(k ,"is found at position ",j)
+else:
+    print(k,"is not found")
