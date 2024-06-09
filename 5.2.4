@@ -1,0 +1,17 @@
+l=[]
+p=[]
+s=int(input("Enter how many values you want to read : "))
+for i in range(0,s):
+    n=int(input())
+    l.append(n)
+for i in range(0,s):
+    m=int(input())
+    p.append(m)
+temp=0    
+if l[i]==p[i]:
+    temp=temp+1
+if temp==s:
+    print("Both arrays are equal")
+else:
+    print("Both arrays are not equal")
+    
