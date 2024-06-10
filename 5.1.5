@@ -1,0 +1,21 @@
+import math
+
+l=[]
+s=int(input("Enter the number of values: "))
+print("Enter values : ")
+for i in range(0,s):
+    n=float(input())
+    l.append(n)
+le=len(l)
+m=0
+v=0
+for i in range(0,le):
+    m=m+l[i]
+mean=m/le
+for i in range(0,le):
+    v=v+((l[i]-mean)**2)
+var=v/le
+dev=math.sqrt(var)
+print("Mean = ",f"{mean:.2f}")
+print("Variance = ",f"{var:.2f}")
+print("Deviation = ",f"{dev:.2f}")
