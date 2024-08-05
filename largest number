@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,*d,*r,*m;
+    scanf("%d%d%d",&a,&b,&c);
+    d=&a;
+    r=&b;
+    m=&c;
+    if(*d>*r && *d>*m)
+    {
+        printf("The largest number among three is %d",*d);
+    }
+    else if(*r>*d && *r>*m)
+    {
+        printf("The largest number among three is %d",*r);
+    }
+    else
+    {
+        printf("The largest number among three is %d",*m);
+    }
+    return 0;
+}
