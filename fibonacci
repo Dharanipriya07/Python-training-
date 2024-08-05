@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int i,n;
+    int r=0,m=1;
+    scanf("%d",&n);
+    printf("The fibonacci for the given number is ");
+    for(i=0;i<n;i++)
+    {
+        printf("%d ",r);
+        r=r+m;
+        m=r-m;
+    }
+    return 0;
+}
