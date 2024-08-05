@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,*d,*p,temp;
+    scanf("%d%d",&a,&b);
+    d=&a;
+    p=&b;
+    temp=*d;
+    *d=*p;
+    *p=temp;
+    printf("After swapping a=%d and b=%d",*d,*p);
+    return 0;
+}
